@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapitos Life Auto | كتالوجات قطع الغيار الأصلية</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo & IBM Plex Sans Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-red-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <!-- شعار Hapitos Life Auto -->
+                <img src="logo.png" alt="Hapitos Life Auto Logo" class="w-12 h-12 object-contain rounded-xl bg-slate-50 p-1 border border-slate-100" onerror="this.src='https://placehold.co/100x100?text=HAPITOS'">
+                <div>
+                    <span class="text-xl font-black tracking-tight text-slate-900 block leading-tight">Hapitos Life Auto</span>
+                    <span class="text-xs font-medium text-red-600">استثمارك فيما يفيدك يقلل من مجهودك</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-600">
+                <a href="#features" class="hover:text-red-600 transition">المميزات</a>
+                <a href="#catalogs" class="hover:text-red-600 transition">الكتالوجات المتوفرة</a>
+                <a href="#pricing" class="hover:text-red-600 transition">السعر والدفع</a>
+                <a href="#faq" class="hover:text-red-600 transition">الأسئلة الشائعة</a>
+            </nav>
+            <div>
+                <a href="#order" class="bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-red-600/20 transition transform active:scale-95 whitespace-nowrap">
+                    اطلب نسختك الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-slate-50/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-right">
+                    <div class="inline-flex items-center space-x-2 space-x-reverse bg-red-50 border border-red-100 px-3 py-1.5 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                        <span class="text-xs font-bold text-red-600">Hapitos Life Auto - النسخة الأصلية للمصنع</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight tracking-tight">
+                        CATALOGUE PIECES DE RECHANGE AUTO  <span class="text-red-600"> NEW CAR  السيارات الجديدة</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+                        تقدم لكم Hapitos Life Auto الأداة الاحترافية الأولى لورش الصيانة ومحلات قطع الغيار. استعرض المخططات الهندسية بدقة عالية، ابحث برقم القطعة (OEM)، واعمل بدون انترنت.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#catalogs" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-red-600/25 transition flex items-center space-x-2 space-x-reverse text-base">
+                            <span>تصفح الكتالوجات المتوفرة</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <a href="#features" class="bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-bold px-6 py-4 rounded-xl transition text-base">
+                            مميزات البرامج
+                        </a>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 flex items-center space-x-8 space-x-reverse text-sm text-slate-500 font-medium">
+                        <div class="flex items-center space-x-2 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>يعمل بدون انترنت</span>
+                        </div>
+                        <div class="flex items-center space-x-2 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>دفع عبر بريدي موب</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-red-600 to-blue-900 rounded-3xl blur-xl opacity-20"></div>
+                        <div class="relative bg-white border border-slate-100 rounded-2xl p-3 shadow-2xl">
+                            <img src="Suzuki-Logo.png" alt="Suzuki Logo" class="rounded-xl w-full object-cover shadow-sm" onerror="this.src='https://placehold.co/600x400?text=Suzuki+Logo'">
+                            <div class="mt-3 p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+                                <div class="text-right">
+                                    <h4 class="font-bold text-slate-900 text-sm">CATALOGUE OF SPARE PARTS</h4>
+                                    <p class="text-xs text-slate-500">كتالوج السيارات الهندية الجديدة</p>
+                                </div>
+                                <span class="bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-lg">استثمر الآن</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">لماذا نعتمد على برامج الكتالوجات؟</h2>
+                <p class="text-slate-600 mt-4 text-base">مصممة خصيصاً لتسهيل أعمال الصيانة وتحديد أرقام القطع بدقة متناهية دون أي أخطاء.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">01</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">مخططات هندسية دقيقة</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">رسوم تفصيلية لكل جزء من السيارة (المحرك، ناقل الحركة، نظام التعليق، الكهرباء والهيكل) مرتبطة بأرقام أصلية.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">02</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">بحث فائق السرعة بالمرجع</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">ابحث برقم القطعة أو الوصف أو اسم المكون للوصول الفوري إلى القطعة المطلوبة خلال ثوانٍ معدودة.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">03</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">تشغيل محلي بالكامل</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">يعمل البرنامج على جهازك المكتبي بدون الحاجة لاتصال بالإنترنت، مع أمان تام وحماية لبيانات الورشة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalogs Gallery Section -->
+    <section id="catalogs" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">معرض الكتالوجات المتاحة</h2>
+                <p class="text-slate-600 mt-4 text-base">اختر الكتالوج الذي تناسب سيارتك أو ورشتك، وحدده مباشرة في نموذج الطلب أسفل الصفحة.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- كتالوج 1 -->
+                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative">
+                            <img src="swift.jpg" alt="Suzuki Swift" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400?text=Suzuki+Swift'">
+                            <span class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">متوفر الآن</span>
+                        </div>
+                        <div class="p-6 text-right">
+                            <span class="text-xs font-bold text-red-600 uppercase tracking-wider">سوزوكي (Suzuki)</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">كتالوج سوزوكي NEW SWIFT</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">الجيل الرابع مع محرك Z12E، يشمل 97 لوحة تفصيلية و1,900 خط قطع غيار أصلية.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <span class="text-lg font-black text-slate-900">1,500 دج</span>
+                        <button onclick="selectCatalog('كتالوج سوزوكي NEW SWIFT')" class="bg-slate-900 hover:bg-red-600 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition">
+                            اختار هذا الكتالوج
+                        </button>
+                    </div>
+                </div>
+
+                <!-- كتالوج 2 -->
+                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative">
+                            <img src="35.png" alt="كتالوج سوزوكي سيليريو" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400?text=Suzuki+Celerio'">
+                            <span class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">متوفر الآن</span>
+                        </div>
+                        <div class="p-6 text-right">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">سوزوكي (Suzuki)</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">كتالوج سوزوكي NEW CELERIO</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">كتالوج شامل لقطع الغيار والمخططات الميكانيكية والكهربائية.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <span class="text-lg font-black text-slate-900">1,500 دج</span>
+                        <button onclick="selectCatalog('كتالوج سوزوكي NEW CELERIO')" class="bg-slate-900 hover:bg-red-600 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition">
+                            اختار هذا الكتالوج
+                        </button>
+                    </div>
+                </div>
+
+                <!-- كتالوج 3 -->
+                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative">
+                            <img src="201.png" alt="كتالوج سوزوكي بالينو" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400?text=Suzuki+Baleno'">
+                            <span class="absolute top-4 right-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">قريباً</span>
+                        </div>
+                        <div class="p-6 text-right">
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">SUZUKI (suzuki)</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">كتالوج سوزوكي NEW BALENO</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">قاعدة بيانات مفصلة لقطع غيار سيارات سوزوكي بالينو.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <span class="text-lg font-black text-slate-900">1,500 دج</span>
+                        <button onclick="selectCatalog('كتالوج سوزوكي NEW BALENO')" class="bg-slate-900 hover:bg-red-600 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition">
+                            اختار هذا الكتالوج
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Live Preview Section (معاينة فيديو) -->
+    <section id="preview" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">معاينة حية لواجهة الكتالوج</h2>
+                <p class="text-slate-600 mt-4 text-base">فيديو توضيحي لواجهة البرنامج وكيفية تصفح أجزاء المحرك والقطع بكل سهولة.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-3xl p-4 sm:p-6 shadow-xl max-w-5xl mx-auto">
+                <div class="relative rounded-xl overflow-hidden border border-slate-100 shadow-sm bg-slate-900">
+                    <video class="w-full h-auto object-cover" controls autoplay muted loop playsinline>
+                        <source src="preview-video.mp4" type="video/mp4">
+                        متصفحك لا يدعم عرض الفيديو.
+                    </video>
+                </div>
+
+                <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="block text-2xl font-black text-slate-900">97</span>
+                        <span class="text-xs text-slate-500 font-semibold">لوحة تفصيلية</span>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="block text-2xl font-black text-slate-900">1,900</span>
+                        <span class="text-xs text-slate-500 font-semibold">خط قطع غيار</span>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="block text-2xl font-black text-slate-900">1,537</span>
+                        <span class="text-xs text-slate-500 font-semibold">مرجع فريد</span>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="block text-2xl font-black text-slate-900">5</span>
+                        <span class="text-xs text-slate-500 font-semibold">أقسام رئيسية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">سعر موحد ومناسب للجميع</h2>
+                <p class="text-slate-600 mt-4 text-base">احصل على أي كتالوج كامل بأفضل قيمة استثمارية لورشك أو محلك عبر Hapitos Life Auto.</p>
+            </div>
+            
+            <div class="max-w-md mx-auto">
+                <div class="bg-white border-2 border-red-600 rounded-3xl p-8 shadow-2xl relative">
+                    <div class="absolute -top-4 right-1/2 translate-x-1/2 bg-red-600 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                        العرض المفضل للورش والمحلات
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-2xl font-black text-slate-900">النسخة الاحترافية الكاملة</h3>
+                        <p class="text-slate-500 text-sm mt-1">أي كتالوج اختيارك - Hapitos Life Auto</p>
+                        <div class="my-6">
+                            <span class="text-5xl font-black text-slate-900">1,500</span>
+                            <span class="text-lg font-bold text-red-600 mr-1">دج</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-700">
+                        <li class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>جميع أقسام الكتالوج واللوحات التفصيلية</span>
+                        </li>
+                        <li class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>البحث الفوري بأرقام القطع الأصلية OEM</span>
+                        </li>
+                        <li class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>التثبيت والاستخدام بدون انترنت</span>
+                        </li>
+                        <li class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>طريقة الدفع: بريدي موب (BaridiMob)</span>
+                        </li>
+                    </ul>
+                    <a href="#order" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-4 rounded-xl shadow-lg shadow-red-600/20 transition">
+                        اطلب الكتالوج الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section with BaridiMob Details -->
+    <section id="order" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900">نموذج الطلب والدفع عبر بريدي موب</h2>
+                    <p class="text-slate-600 mt-2 text-sm">اختر الكتالوج المطلوب واملأ البيانات أدناه لإتمام طلبك واستلامه من Hapitos Life Auto مباشرة.</p>
+                </div>
+
+                <!-- BaridiMob Info Box -->
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-8 text-right">
+                    <h4 class="font-bold text-amber-900 text-base mb-2 flex items-center space-x-2 space-x-reverse">
+                        <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>معلومات الدفع عبر بريدي موب (BaridiMob)</span>
+                    </h4>
+                    <p class="text-amber-800 text-sm leading-relaxed mb-3">
+                        يرجى تحويل مبلغ <strong class="font-bold">1,500 دج</strong> إلى الحساب البريدي التالي، ثم إرسال وصل الدفع عبر النموذج أو واتساب:
+                    </p>
+                    <div class="bg-white p-4 rounded-xl border border-amber-200 font-mono text-sm space-y-1 text-slate-800">
+                        <div><strong>رقم الحساب CCP / RIP:</strong> 00799999001473250756</div>
+                        <div><strong>المبلغ:</strong> 1,500 دج</div>
+                    </div>
+                </div>
+
+                <form onsubmit="submitOrder(event)" class="space-y-6 text-right">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">اختر الكتالوج المطلوب</label>
+                        <select id="selectedCatalog" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-red-600 text-slate-800 font-bold">
+                            <option value="كتالوج سوزوكي NEW SWIFT">كتالوج سوزوكي NEW SWIFT</option>
+                            <option value="كتالوج سوزوكي NEW CELERIO">كتالوج سوزوكي NEW CELERIO</option>
+                            <option value="كتالوج سوزوكي NEW BALENO">كتالوج سوزوكي NEW BALENO</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">الاسم الكامل أو اسم الورشة</label>
+                        <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-red-600 text-slate-800" placeholder="مثال: ورشة الميكانيك السريع">
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">رقم الهاتف (واتساب)</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-red-600 text-slate-800" placeholder="07xxxxxxxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">الولاية</label>
+                            <input type="text" id="city" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-red-600 text-slate-800" placeholder="مثال: الجزائر العاصمة">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">رقم عملية التحويل بريدي موب</label>
+                        <input type="text" id="transaction" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-red-600 text-slate-800" placeholder="رقم الإيصال أو مرجع التحويل">
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-red-600/20 transition text-base">
+                        تأكيد الطلب وإرسال عبر واتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">الأسئلة الشائعة</h2>
+                <p class="text-slate-600 mt-2 text-base">إجابات واضحة حول تثبيت الكتالوج وطريقة استلامه.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl">
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">كيف أستلم الكتالوج بعد الدفع عبر بريدي موب؟</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">بمجرد إرسال وصل الدفع عبر النموذج أو واتساب، يتم إرسال ملف التثبيت والرابط المباشر للبرنامج إليك خلال دقائق معدودة من طرف Hapitos Life Auto.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl">
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">هل يحتاج البرنامج إلى اتصال بالإنترنت؟</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">لا، البرنامج يعمل بشكل محلي بالكامل (Offline) على جهازك المكتبي دون الحاجة لأي اتصال بالإنترنت.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl">
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">هل السعر نهائي لكل كتالوج؟</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">نعم، السعر موحد وهو 1,500 دج فقط لكل كتالوج يشمل كامل اللوحات والتحديثات الأصلية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-center sm:text-right">
+            <div class="flex items-center space-x-3 space-x-reverse mb-4 sm:mb-0">
+                <img src="logo.png" alt="Hapitos Life Auto Logo" class="w-8 h-8 object-contain rounded-lg bg-white p-0.5" onerror="this.src='https://placehold.co/100x100?text=H'">
+                <span class="text-lg font-bold">Hapitos Life Auto © 2026</span>
+            </div>
+            <p class="text-xs text-slate-400">جميع الحقوق محفوظة - Hapitos Life Auto © 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        function selectCatalog(catalogName) {
+            const selectElement = document.getElementById('selectedCatalog');
+            selectElement.value = catalogName;
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function submitOrder(e) {
+            e.preventDefault();
+            const catalog = document.getElementById('selectedCatalog').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const city = document.getElementById('city').value;
+            const transaction = document.getElementById('transaction').value || 'لم يُحدد بعد';
+
+            const message = `مرحباً Hapitos Life Auto، أود طلب:\n- ${catalog} (1500 دج)\n\n- الاسم: ${name}\n- الهاتف: ${phone}\n- الولاية: ${city}\n- رقم تحويل بريدي موب: ${transaction}`;
+            const whatsappUrl = `https://wa.me/213774770878?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
