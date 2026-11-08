@@ -384,18 +384,46 @@
             document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
         }
 
-        function submitOrder(e) {
-            e.preventDefault();
-            const catalog = document.getElementById('selectedCatalog').value;
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const city = document.getElementById('city').value;
-            const transaction = document.getElementById('transaction').value || 'لم يُحدد بعد';
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwMwNk6lcQHwvAv6XvZ_VjBlpegZbC1O3jKvGZeuoLcs8N5s0b4WsJZQShlrkolNPgB/exec
+";
 
-            const message = `مرحباً Hapitos Life Auto، أود طلب:\n- ${catalog} (1500 دج)\n\n- الاسم: ${name}\n- الهاتف: ${phone}\n- الولاية: ${city}\n- رقم تحويل بريدي موب: ${transaction}`;
-            const whatsappUrl = `https://wa.me/213774770878?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
+function submitOrder(e) {
+    e.preventDefault();
+    const catalog = document.getElementById('selectedCatalog').value;
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const city = document.getElementById('city').value;
+    const transaction = document.getElementById('transaction').value || 'لم يُحدد بعد';
+
+    // 1. تجهيز البيانات للإرسال إلى Google Sheets
+    const orderData = {
+        catalog: catalog,
+        name: name,
+        phone: phone,
+        city: city,
+        transaction: transaction
+    };
+
+    // إرسال البيانات إلى Google Sheets في الخلفية
+    fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderData)
+    }).then(() => {
+        console.log("تم تسجيل الطلب في Google Sheets بنجاح!");
+    }).catch(err => {
+        console.error("خطأ في تسجيل الطلب:", err);
+    });
+
+    // 2. توجيه العميل فوراً إلى واتساب
+    const message = `مرحباً Hapitos Life Auto، أود طلب:\n- ${catalog} (1500 دج)\n\n- الاسم: ${name}\n- الهاتف: ${phone}\n- الولاية: ${city}\n- رقم تحويل بريدي موب: ${transaction}`;
+    const whatsappUrl = `https://wa.me/213774770878?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+}
     </script>
 </body>
 </html>
